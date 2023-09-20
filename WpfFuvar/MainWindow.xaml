@@ -5,8 +5,50 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfFuvar"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
 
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="btnFuvarszam"
+               VerticalAlignment="Top"
+               HorizontalAlignment="Center"
+                Click="btnFuvarszam_Click">3.feladat</Button>
+        <StackPanel VerticalAlignment="Center"
+               HorizontalAlignment="Center">
+
+            <ComboBox x:Name="cbAzonositok"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center">
+            </ComboBox>
+            <Button x:Name="btnTaxisInfo"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+               Click="btnTaxisInfo_Click">4.feladat</Button>
+        </StackPanel>
+
+
+        <ListBox x:Name="lbFizetesimodok"
+               VerticalAlignment="Bottom"
+               HorizontalAlignment="Center"></ListBox>
+
+        <Button x:Name="btnOsszKM"
+                Grid.Row="1"
+               VerticalAlignment="Top"
+               HorizontalAlignment="Center" Click="btnOsszKM_Click"
+                >6.feladat</Button>
+
+        <ListBox x:Name="lbLeghosszabbfuvar"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+                 Grid.Row="1">
+        </ListBox>
     </Grid>
 </Window>

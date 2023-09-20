@@ -37,7 +37,8 @@
 
         <ListBox x:Name="lbFizetesimodok"
                VerticalAlignment="Bottom"
-               HorizontalAlignment="Center"></ListBox>
+               HorizontalAlignment="Center"
+                 Grid.Column="1"></ListBox>
 
         <Button x:Name="btnOsszKM"
                 Grid.Row="1"
